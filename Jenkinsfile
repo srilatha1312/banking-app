@@ -18,6 +18,15 @@ pipeline{
         echo"build sucessfull"
       }
     }
-    }   
+    }  
+    
+    stage('build'){
+      steps{
+        
+      script{
+        echo"build sucessfull"
+      }
+    }
+    }
   }
 }
