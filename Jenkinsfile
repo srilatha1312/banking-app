@@ -20,11 +20,11 @@ pipeline{
     }
     }  
     
-    stage('build'){
+    stage('deploy'){
       steps{
         
       script{
-        echo"build sucessfull"
+        echo"deploy sucessfull"
       }
     }
     }
