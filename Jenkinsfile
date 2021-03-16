@@ -8,6 +8,16 @@ pipeline{
         echo"checkout sucessfull"
       }
     }
+    } 
+    
+    
+    stage('build'){
+      steps{
+        
+      script{
+        echo"build sucessfull"
+      }
+    }
     }   
   }
 }
