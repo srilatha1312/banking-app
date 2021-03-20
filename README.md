@@ -17,3 +17,4 @@ the "Deliver" stage of your Pipeline.
 
 // srilatha changes
 // learimg of git
+// git is a distributed version control
