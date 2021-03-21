@@ -6,6 +6,7 @@ pipeline{
         
       script{
        bat'mvn clean package'
+       junit '**/surefire-reports/*.xml'
         echo"checkout sucessfull"
       }
     }
