@@ -5,18 +5,20 @@ pipeline{
       steps{
         
       script{
-       bat'mvn clean package'
-       junit '**/surefire-reports/*.xml'
+       bat'mvn clean package -Dmaven.test.skip=true'
+
         echo"checkout sucessfull"
       }
     }
     } 
     // abcd
     
-    stage('build'){
+    stage('unit test'){
       steps{
         
       script{
+      bat'mvn test'
+       junit '**/surefire-reports/*.xml'
         echo"build sucessfull"
       }
     }
