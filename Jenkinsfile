@@ -1,10 +1,11 @@
 pipeline{
   agent any
   stages{
-    stage('checkout'){
+    stage('build appication'){
       steps{
         
       script{
+       bat'mvn clean package'
         echo"checkout sucessfull"
       }
     }
