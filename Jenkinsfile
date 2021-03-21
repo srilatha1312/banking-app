@@ -29,6 +29,15 @@ pipeline{
         echo"deploy  sucessfull"
       }
     }
-    }   
+    }
+
+    stage('monitor'){
+          steps{
+
+          script{
+            echo"monitor  sucessfull"
+          }
+        }
+        }
   }
 }
