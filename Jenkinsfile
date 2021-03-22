@@ -17,17 +17,17 @@ pipeline{
       steps{
         
       script{
-      bat'mvn test'
-       junit '**/surefire-reports/*.xml'
+     // bat'mvn test'
+      // junit '**/surefire-reports/*.xml'
         echo"build sucessfull"
 
-        publishHTML (target : [allowMissing: false,
+       /* publishHTML (target : [allowMissing: false,
          alwaysLinkToLastBuild: true,
          keepAll: true,
          reportDir: 'target/site/jacoco',
          reportFiles: 'index.html',
          reportName: 'coverage report',
-         reportTitles: 'coverage report'])
+         reportTitles: 'coverage report']) */
       }
     }
     }  
