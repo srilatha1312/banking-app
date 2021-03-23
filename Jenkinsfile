@@ -19,8 +19,8 @@ pipeline{
       steps{
         
       script{
-     // bat'mvn test'
-      // junit '**/surefire-reports/*.xml'
+      bat'mvn test'
+       junit '**/surefire-reports/*.xml'
         echo"build sucessfull"
 
        /* publishHTML (target : [allowMissing: false,
