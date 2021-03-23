@@ -8,7 +8,7 @@ pipeline{
        bat'mvn clean package -Dmaven.test.skip=true'
 
         echo"checkout sucessfull"
-        echo" congrats
+        echo" congrats"
 
       }
     }
