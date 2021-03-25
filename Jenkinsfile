@@ -1,6 +1,10 @@
 pipeline{
   agent any
   stages{
+
+  parameters {
+              booleanParam(name: 'PERFORM_RELEASE', defaultValue: false, description: 'Used by CI team to create release candidate. Works only on release branches and master. Please confirm with CI before selecting PERFORM_RELEASE')
+          }
     stage('build appication'){
       steps{
         
