@@ -102,6 +102,8 @@ def readStringValueFromFile(String fileName,String key){
     }
     return value
 }
+
+@NonCPS
 def sonarQualityBreaker(boolean ignoreSonarQube) {
     def groupId = ""
     def artefactId = ""
