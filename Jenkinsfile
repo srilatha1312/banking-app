@@ -41,7 +41,7 @@ pipeline{
         
       script{
         mvn sonar:sonar \
-          -Dsonar.host.url=http://localhost:9000 \
+          -Dsonar.host.url="http://localhost:9000 \""
           -Dsonar.login=7ce69212e6dd7c108eef4520418ea47664d6c062
       }
     }
