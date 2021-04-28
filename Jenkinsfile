@@ -67,7 +67,7 @@ pipeline{
 
 // function defninations
 
-def qualityGateCheck(String projectKey,boolean returnStatus = false){
+/*def qualityGateCheck(String projectKey,boolean returnStatus = false){
 
     def qualityGateUrl = "https://sonar.aib.pri/api/qualitygates/project_status?projectKey=${projectKey}"
     sh "curl -u 3c2968b5656907c53943c4f2725088d1efb35a49: $qualityGateUrl -o qualityGate.json"
@@ -191,3 +191,4 @@ def checkCurrentTime() {
     String currentTime = timeNow.format("yyyy-MM")
     return currentTime
 }
+*/
